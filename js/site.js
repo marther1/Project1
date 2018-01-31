@@ -18,5 +18,9 @@ jQuery(function($) {
         $('#form-list').append('<li id="invalid">Please enter a valid email address.</li>');
         return false;
       }
+    else {
+        $(this).remove();
+        $('#description').append('<li id="submitted">We\'ll see how good you are in the Bog this Friday.</li>');
+      }
   });
 });
