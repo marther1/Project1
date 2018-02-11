@@ -10,12 +10,12 @@ jQuery(function($) {
     if (email === '') {
       console.log('email field is empty');
       $('#invalid').remove();
-      $('#form-list').append('<li id="invalid">Please enter your email address to recieve your invite.</li>');
+      $('#emailid').append('<li id="invalid">Please enter your email address to recieve your invite.</li>');
     }
     else if (!valid.test(email)) {
       console.log('invalid email');
       $('#invalid').remove();
-      $('#form-list').append('<li id="invalid">Please enter a valid email address.</li>');
+      $('#emailid').append('<li id="invalid">Please enter a valid email address.</li>');
       return false;
     }
     else {
