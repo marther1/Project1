@@ -4,15 +4,17 @@ jQuery(function($) {
   $('html').addClass('hasjs');
 
   $('#form').on("submit", function(e) {
-    var email = $('#email').val();
-    var valid =  /.+@.+/;
+    var email = {
+    val: $('#email').val(),
+    pattern: /^[^\s@]+@[^\s@]+$/
+    }
     e.preventDefault();
-    if (email === '') {
+    if (email.val === '') {
       console.log('email field is empty');
       $('#invalid').remove();
       $('#emailid').append('<li id="invalid">Please enter your email address to recieve your invite.</li>');
     }
-    else if (!valid.test(email)) {
+    else if (!(email.pattern).test(email.val)) {
       console.log('invalid email');
       $('#invalid').remove();
       $('#emailid').append('<li id="invalid">Please enter a valid email address.</li>');
