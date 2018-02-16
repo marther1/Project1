@@ -8,6 +8,10 @@ jQuery(function($) {
     val: $('#email').val(),
     pattern: /^[^\s@]+@[^\s@]+$/
     }
+    var camp = {
+      val: $('#camp').val(),
+      pattern: /^A?\d{8}/
+    }
     e.preventDefault();
     if (email.val === '') {
       console.log('email field is empty');
