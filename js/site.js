@@ -23,10 +23,15 @@ jQuery(function($) {
       $('#invalid').remove();
       $('#emailid').append('<li id="invalid">Please enter a valid email address.</li>');
     }
-    if (camp.val === ''){
+    else if (camp.val === ''){
       console.log('campus id field is empty');
       $('#empty').remove();
       $('#campid').append('<li id="empty">Please enter your Campus Id so we can verify that you are a part of IIT.</li>');
+    }
+    else if (!(camp.pattern).test(camp.val)) {
+      console.log('invalid campus id');
+      $('#empty').remove();
+      $('#campid').append('<li id="empty">Invalid Campus Id.</li>');
     }
     else {
       $(this).remove();
