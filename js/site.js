@@ -5,13 +5,13 @@ jQuery(function($) {
 
   $('#form').on("submit", function(e) {
     var email = {
-    val: $('#email').val(),
-    pattern: /^[^\s@]+@[^\s@]+$/
-    }
+      val: $('#email').val(),
+      pattern: /^[^\s@]+@[^\s@]+$/
+    };
     var camp = {
       val: $('#camp').val(),
       pattern: /^A?\d{8}/
-    }
+    };
     e.preventDefault();
     if (email.val === '') {
       console.log('email field is empty');
