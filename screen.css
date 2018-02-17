@@ -221,8 +221,7 @@ input {
 #footer {
   font-size: 0.75em;
 }
-#invalid,
-#empty {
+#invalid {
   color: red;
   padding-bottom: 1.222em;
 }
