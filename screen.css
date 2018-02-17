@@ -245,4 +245,20 @@ li:hover [type="submit"] {
     font-size: 1.25em;
     padding: 5%;
   }
+  #content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3.488%;
+  }
+  #description,
+  #form-list {
+    width: auto;
+  }
+  #description {
+    grid-column: 1;
+    padding-top: 5em;
+  }
+  #form-list {
+    grid-column: 2/4;
+  }
 }
