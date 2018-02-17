@@ -204,9 +204,6 @@ h1 {
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   margin: 0;
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-style: italic;
 }
 label,
 input {
@@ -243,3 +240,9 @@ li:hover [type="submit"] {
 /* Modular Styles */
 
 /* State Styles */
+@media screen and (min-width: 860px) {
+  body {
+    font-size: 1.25em;
+    padding: 5%;
+  }
+}
