@@ -187,6 +187,7 @@ html {
   font-family: sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
+  color: #202020;
 }
 body {
   padding-top: 3.667em; /* 66 / 18 = 3.667... */
@@ -227,6 +228,14 @@ input {
 #empty {
   color: red;
   padding-bottom: 1.222em;
+}
+li [type="submit"] {
+  background-color: #003087;
+  color: #fff;
+  cursor: pointer;
+}
+li:hover [type="submit"] {
+  background-color: #0072CE;
 }
 
 /* Layout Styles */
