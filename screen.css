@@ -283,3 +283,13 @@ img {
     grid-area: d;
   }
 }
+@media screen and (min-width: 1440px) {
+  img {
+    height: 100%;
+  }
+  #images {
+    display: grid;
+    width: auto;
+    grid-template-areas: "a b c d";
+  }
+}
