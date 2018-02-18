@@ -235,9 +235,12 @@ li:hover [type="submit"] {
   background-color: #0072CE;
 }
 
-/* Layout Styles */
-
-/* Modular Styles */
+/*Responsive media */
+img {
+  display: block;
+  max-width: 100%;
+  
+}
 
 /* State Styles */
 @media screen and (min-width: 860px) {
