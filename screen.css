@@ -219,8 +219,9 @@ input {
   line-height: 1em;
   padding: 0.7222em;
 }
-#footer {
+footer {
   font-size: 0.75em;
+  padding-top: 1.222em;
 }
 #invalid {
   color: red;
@@ -239,7 +240,6 @@ li:hover [type="submit"] {
 img {
   display: block;
   max-width: 100%;
-  
 }
 
 /* State Styles */
@@ -263,5 +263,23 @@ img {
   }
   #form-list {
     grid-column: 2/4;
+  }
+  #images {
+    display: grid;
+    width: auto;
+    grid-template-areas: "a b"
+                         "c d";
+  }
+  #ps {
+    grid-area: a;
+  }
+  #xbox {
+    grid-area: b;
+  }
+  #nintendo {
+    grid-area: c;
+  }
+  #pc {
+    grid-area: d;
   }
 }
