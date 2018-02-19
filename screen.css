@@ -184,7 +184,7 @@ textarea {
 */
 
 html {
-  font-family: 'Play', sans-serif;
+  font-family: Play, sans-serif;
   font-size: 1.125em; /* 18 / 16 = 1.125 */
   line-height: 1.222em; /* 22 / 18 = 1.2222222222 */
   color: #202020;
@@ -204,12 +204,15 @@ h1 {
   line-height: 1.032em; /* 44 / 42.635 = 1.032 */
   padding-bottom: 0.516em; /* 22 / 42.635 = 0.516 */
   margin: 0;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
 h2 {
   font-size: 2em;
   line-height: 1.222em;
   padding-top: 1.222em;
+}
+h6 {
+  padding-bottom: 0.75em;
 }
 label,
 input {
@@ -275,8 +278,9 @@ img {
   #images {
     display: grid;
     width: auto;
-    grid-template-areas: "a b"
-                         "c d";
+    grid-template-areas: "e e"
+      "a b"
+      "c d";
   }
   #ps {
     grid-area: a;
@@ -290,6 +294,9 @@ img {
   #pc {
     grid-area: d;
   }
+  h6 {
+    grid-area: e;
+  }
 }
 @media screen and (min-width: 1440px) {
   img {
@@ -298,6 +305,7 @@ img {
   #images {
     display: grid;
     width: auto;
-    grid-template-areas: "a b c d";
+    grid-template-areas: "e e e e"
+      "a b c d";
   }
 }
