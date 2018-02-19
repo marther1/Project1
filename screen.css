@@ -238,12 +238,12 @@ footer {
 li {
   list-style: none;
 }
-li [type="submit"] {
+li #submit {
   background-color: #003087;
   color: #fff;
   cursor: pointer;
 }
-li:hover [type="submit"] {
+li:hover #submit {
   background-color: #0072CE;
 }
 
