@@ -206,6 +206,11 @@ h1 {
   margin: 0;
   font-family: 'Press Start 2P', cursive;
 }
+h2 {
+  font-size: 2em;
+  line-height: 1.222em;
+  padding-top: 1.222em;
+}
 label,
 input {
   display: block;
@@ -226,6 +231,9 @@ footer {
 #invalid {
   color: red;
   padding-bottom: 1.222em;
+}
+li {
+  list-style: none;
 }
 li [type="submit"] {
   background-color: #003087;

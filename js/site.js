@@ -35,7 +35,8 @@ jQuery(function($) {
     }
     else {
       $(this).remove();
-      $('#description').append('<li id="submitted">We\'ll see how good you are in the Bog this Friday.</li>');
+      $('#description').append('<h2>Alright Gamer!</h2>');
+      $('#description').append('<li>Your invite has been sent at: ' + email.val + '</li>');
     }
   });
 });
